@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0a182e",
+              "background-light": "#f6f7f8",
+              "background-dark": "#121820",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; }
+      .glass-card { background: rgba(10, 24, 46, 0.4); border: 1px solid rgba(255, 255, 255, 0.05); }
+      .gradient-border { border-image: linear-gradient(to right, #0a182e, #1e293b) 1; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="fixed top-0 z-50 w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xl">landscape</span>
+</div>
+<h2 class="text-slate-100 text-xl font-bold tracking-tight">Ricardo AVLESSI</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-400 hover:text-white text-sm font-medium transition-colors" href="#accueil">Accueil</a>
+<a class="text-slate-400 hover:text-white text-sm font-medium transition-colors" href="#expertise">Expertise</a>
+<a class="text-slate-400 hover:text-white text-sm font-medium transition-colors" href="#parcours">Parcours</a>
+<a class="text-slate-400 hover:text-white text-sm font-medium transition-colors" href="#competences">Compétences</a>
+<button class="bg-primary hover:bg-primary/80 text-white text-sm font-bold py-2.5 px-6 rounded-lg transition-all border border-white/10">
+                            Me contacter
+                        </button>
+</nav>
+</div>
+</header>
+<main class="flex-1 pt-24">
+<section class="px-6 lg:px-20 py-16 lg:py-32 max-w-7xl mx-auto" id="accueil">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+</span>
+<span class="text-xs font-semibold text-sky-400 tracking-wider uppercase">Disponible pour consultation</span>
+</div>
+<h1 class="text-slate-100 text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                                Ricardo AVLESSI — <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Expert en Développement Rural</span>
+</h1>
+<p class="text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl">
+                                Bâtir des communautés résilientes par l'expertise sociale et les solutions numériques. Agroéconomiste engagé dans l'innovation durable.
+                            </p>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center justify-center bg-primary text-white font-bold py-4 px-8 rounded-xl hover:scale-[1.02] transition-transform" href="#contact">
+                                    Me contacter
+                                </a>
+<a class="flex items-center justify-center bg-white/5 text-slate-200 border border-white/10 font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-colors" href="#expertise">
+                                    Voir mon expertise
+                                </a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border-2 border-white/5 shadow-2xl">
+<img alt="Portrait professionnel de Ricardo AVLESSI" class="w-full h-full object-cover" data-alt="Professional portrait of a male expert in field attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUCPptDXuwppzqZAlA95XPpl8K4PH6afGSiwqj02ZkRHaKdHhnBKdCyXH7NU8da-HQJKggKK9gbudnSopHaWI8E7L0AUnIOuOxygVY4vgqMROH3zkLw6BCZMkGeolQH2_kCWYPhuasAbYwZ0X95d0TJdzf4zqlvH4q0wMBx0s10Y4H8_9aLrOUnfqT0ZIRagkIjhKkWvbPrDqbOx5jsh1pmSmTOr1V3HWOt4B2tRI9jTS1o20rE1vZYelNknY-O8JOfBW20LQFQL4"/>
+</div>
+
+</div>
+</div><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/5">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-4xl lg:text-5xl font-black text-white">10+</span>
+<span class="text-slate-400 uppercase tracking-widest text-sm font-bold">Années d'expérience</span>
+</div>
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-4xl lg:text-5xl font-black text-emerald-400">5000+</span>
+<span class="text-slate-400 uppercase tracking-widest text-sm font-bold">Personnes formées</span>
+</div>
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-4xl lg:text-5xl font-black text-blue-400">50+</span>
+<span class="text-slate-400 uppercase tracking-widest text-sm font-bold">Projets impactés</span>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-20 py-24 bg-primary/10" id="expertise">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col gap-4 mb-16">
+<h2 class="text-slate-100 text-3xl lg:text-4xl font-bold tracking-tight">Piliers d'Expertise</h2>
+<div class="h-1 w-20 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="glass-card p-8 rounded-2xl group hover:bg-primary/40 transition-all duration-300">
+<span class="material-symbols-outlined text-blue-400 text-4xl mb-6 block group-hover:scale-110 transition-transform">diversity_3</span>
+<h3 class="text-slate-100 font-bold text-lg mb-2 leading-snug">Genre &amp; Inclusion économique</h3>
+<p class="text-slate-400 text-sm">Empowerment et égalité des chances pour tous.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl group hover:bg-primary/40 transition-all duration-300">
+<span class="material-symbols-outlined text-emerald-400 text-4xl mb-6 block group-hover:scale-110 transition-transform">account_balance</span>
+<h3 class="text-slate-100 font-bold text-lg mb-2 leading-snug">Cohésion sociale &amp; Gouvernance</h3>
+<p class="text-slate-400 text-sm">Gouvernance locale participative et transparente.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl group hover:bg-primary/40 transition-all duration-300">
+<span class="material-symbols-outlined text-amber-400 text-4xl mb-6 block group-hover:scale-110 transition-transform">handshake</span>
+<h3 class="text-slate-100 font-bold text-lg mb-2 leading-snug">Gestion des conflits &amp; Résilience</h3>
+<p class="text-slate-400 text-sm">Paix durable et renforcement communautaire.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl group hover:bg-primary/40 transition-all duration-300">
+<span class="material-symbols-outlined text-purple-400 text-4xl mb-6 block group-hover:scale-110 transition-transform">analytics</span>
+<h3 class="text-slate-100 font-bold text-lg mb-2 leading-snug">Gestion de projet &amp; Suivi-évaluation</h3>
+<p class="text-slate-400 text-sm">Efficacité opérationnelle et mesure d'impact.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl group hover:bg-primary/40 transition-all duration-300">
+<span class="material-symbols-outlined text-sky-400 text-4xl mb-6 block group-hover:scale-110 transition-transform">developer_mode</span>
+<h3 class="text-slate-100 font-bold text-lg mb-2 leading-snug">Innovation &amp; Solutions numériques</h3>
+<p class="text-slate-400 text-sm">Transformation digitale au service du rural.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-20 py-24 max-w-7xl mx-auto" id="a-propos">
+<div class="grid lg:grid-cols-2 gap-20 items-start">
+<div class="space-y-8">
+<h2 class="text-slate-100 text-4xl font-bold tracking-tight">À Propos</h2>
+<div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+<p>
+                                    En tant qu'Agroéconomiste et agrosociologue, j'ai dédié ma carrière à la transformation positive des zones rurales. Mon approche combine rigueur analytique et sensibilité sociale pour répondre aux défis complexes du développement.
+                                </p>
+<div class="p-6 border-l-4 border-primary bg-primary/10 rounded-r-xl">
+<h4 class="text-slate-100 font-bold mb-2">Ma Vision</h4>
+<p class="italic text-slate-300">"Contribuer à un développement équitable, durable et innovant où chaque membre de la communauté devient acteur de son propre progrès."</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-8 bg-white/5 rounded-2xl border border-white/5">
+<h4 class="text-slate-100 font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-400">verified_user</span> Valeurs
+                                </h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li class="flex items-center gap-2"><span class="size-1 bg-blue-400 rounded-full"></span> Inclusion &amp; Équité</li>
+<li class="flex items-center gap-2"><span class="size-1 bg-blue-400 rounded-full"></span> Participation</li>
+<li class="flex items-center gap-2"><span class="size-1 bg-blue-400 rounded-full"></span> Innovation</li>
+<li class="flex items-center gap-2"><span class="size-1 bg-blue-400 rounded-full"></span> Responsabilité</li>
+<li class="flex items-center gap-2"><span class="size-1 bg-blue-400 rounded-full"></span> Impact durable</li>
+</ul>
+</div>
+<div class="p-8 bg-white/5 rounded-2xl border border-white/5">
+<h4 class="text-slate-100 font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400">school</span> Formation
+                                </h4>
+<ul class="space-y-4 text-slate-400 text-xs">
+<li>
+<p class="font-bold text-slate-200">Master Professionnel</p>
+<p>Université de Parakou</p>
+</li>
+<li>
+<p class="font-bold text-slate-200">Licence en Agronomie</p>
+<p>Université de Parakou</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-20 py-24 bg-white/[0.02]" id="parcours">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-slate-100 text-4xl font-bold tracking-tight mb-4">Parcours Professionnel</h2>
+<p class="text-slate-400">Une trajectoire dédiée au service du développement international</p>
+</div>
+<div class="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-background-dark text-slate-100 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">work</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-blue-500/30 transition-colors">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-slate-100">Facilitateur Technique</div>
+<time class="text-xs font-medium text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded">Projet COSO</time>
+</div>
+<div class="text-slate-400 text-sm">Coordination des interventions communautaires et renforcement des capacités locales.</div>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-background-dark text-slate-100 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-emerald-500/30 transition-colors">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-slate-100">Superviseur Départemental</div>
+<time class="text-xs font-medium text-blue-500 bg-blue-500/10 px-2 py-0.5 rounded">SWEDD / Banque Mondiale</time>
+</div>
+<div class="text-slate-400 text-sm">Supervision de projets d'autonomisation des femmes et dividende démographique.</div>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-background-dark text-slate-100 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">biotech</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-amber-500/30 transition-colors">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-slate-100">Assistant Technique</div>
+<time class="text-xs font-medium text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded">PASDeR3 / Swisscontact</time>
+</div>
+<div class="text-slate-400 text-sm">Appui technique au développement rural et à la formation professionnelle.</div>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-background-dark text-slate-100 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">groups</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-2xl border border-white/5 bg-white/5 hover:border-sky-500/30 transition-colors">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-slate-100">Facilitateur Communautaire</div>
+<time class="text-xs font-medium text-sky-500 bg-sky-500/10 px-2 py-0.5 rounded">UNICEF</time>
+</div>
+<div class="text-slate-400 text-sm">Mobilisation sociale pour les droits de l'enfant et l'éducation.</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="px-6 lg:px-20 py-24 bg-primary/5" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col gap-4 mb-16 text-center">
+<h2 class="text-slate-100 text-3xl lg:text-4xl font-bold tracking-tight">Portfolio de Projets</h2>
+<div class="h-1 w-20 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full mx-auto"></div>
+<p class="text-slate-400 mt-4">Découvrez mes interventions marquantes en milieu rural et solutions digitales.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video">
+<img alt="Développement Rural" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="{{DATA:IMAGE:PORTFOLIO_1}}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-6">
+<span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Rural</span>
+<h4 class="text-white font-bold text-lg">Infrastructures Communautaires</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video">
+<img alt="Digital Solutions" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="{{DATA:IMAGE:PORTFOLIO_2}}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-6">
+<span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Digital</span>
+<h4 class="text-white font-bold text-lg">Digitalisation de la Collecte</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video">
+<img alt="Training Session" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="{{DATA:IMAGE:PORTFOLIO_3}}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-6">
+<span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Impact Social</span>
+<h4 class="text-white font-bold text-lg">Formation &amp; Renforcement</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-20 py-24 bg-white/[0.01]" id="certifications">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-slate-100 text-3xl font-bold mb-12 flex items-center gap-3">
+<span class="material-symbols-outlined text-amber-400">workspace_premium</span>
+            Certifications &amp; Attestations
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+<span class="material-symbols-outlined text-blue-400">verified</span>
+<div>
+<h4 class="text-slate-100 font-bold text-sm">Certification GTA</h4>
+<p class="text-slate-500 text-xs">Gestion de Territoire Appliquée</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+<span class="material-symbols-outlined text-emerald-400">shield_person</span>
+<div>
+<h4 class="text-slate-100 font-bold text-sm">Prévention VBG</h4>
+<p class="text-slate-500 text-xs">Protection &amp; Inclusion Sociale</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+<span class="material-symbols-outlined text-amber-400">leaderboard</span>
+<div>
+<h4 class="text-slate-100 font-bold text-sm">Spécialiste M&amp;E</h4>
+<p class="text-slate-500 text-xs">Suivi et Évaluation d'Impact</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+<span class="material-symbols-outlined text-sky-400">hub</span>
+<div>
+<h4 class="text-slate-100 font-bold text-sm">Gouvernance Locale</h4>
+<p class="text-slate-500 text-xs">Décentralisation &amp; Participation</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="px-6 lg:px-20 py-24 max-w-7xl mx-auto" id="competences">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-slate-100 text-3xl font-bold mb-10 flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-400">psychology</span>
+                                Compétences Techniques
+                            </h2>
+<div class="space-y-6">
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="text-slate-200 font-medium">Analyse communautaire &amp; Diagnostic</span>
+<span class="text-slate-500">95%</span>
+</div>
+<div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+<div class="bg-blue-500 h-full w-[95%] group-hover:bg-blue-400 transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="text-slate-200 font-medium">Gouvernance Locale &amp; Participation</span>
+<span class="text-slate-500">90%</span>
+</div>
+<div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+<div class="bg-emerald-500 h-full w-[90%] group-hover:bg-emerald-400 transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="text-slate-200 font-medium">Suivi &amp; Évaluation (M&amp;E)</span>
+<span class="text-slate-500">85%</span>
+</div>
+<div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full w-[85%] group-hover:bg-amber-400 transition-all"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="text-slate-200 font-medium">Ingénierie Sociale</span>
+<span class="text-slate-500">92%</span>
+</div>
+<div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+<div class="bg-purple-500 h-full w-[92%] group-hover:bg-purple-400 transition-all"></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-slate-100 text-3xl font-bold mb-10 flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-400">construction</span>
+                                Outils Digitaux
+                            </h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-white/5 rounded-xl border border-white/5 flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-3xl text-blue-400">bar_chart</span>
+<span class="text-slate-100 font-bold">Power BI</span>
+<p class="text-xs text-slate-500">Visualisation de données complexes</p>
+</div>
+<div class="p-6 bg-white/5 rounded-xl border border-white/5 flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-3xl text-emerald-400">functions</span>
+<span class="text-slate-100 font-bold">SPSS / R</span>
+<p class="text-xs text-slate-500">Analyse statistique avancée</p>
+</div>
+<div class="p-6 bg-white/5 rounded-xl border border-white/5 flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-3xl text-amber-400">web</span>
+<span class="text-slate-100 font-bold">Web Design</span>
+<p class="text-xs text-slate-500">Conception d'outils digitaux</p>
+</div>
+<div class="p-6 bg-white/5 rounded-xl border border-white/5 flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-3xl text-sky-400">cloud_sync</span>
+<span class="text-slate-100 font-bold">KoboToolbox</span>
+<p class="text-xs text-slate-500">Collecte mobile de données</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-20 py-24 bg-primary" id="contact">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+<div class="space-y-8">
+<h2 class="text-white text-4xl font-black tracking-tight">Collaborons ensemble.</h2>
+<p class="text-slate-300 text-lg">Vous avez un projet de développement rural ou une initiative d'innovation sociale ? Discutons-en.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 text-white hover:text-blue-400 transition-colors" href="mailto:argh2014@gmail.com">
+<span class="material-symbols-outlined size-12 flex items-center justify-center bg-white/10 rounded-full">mail</span>
+<div>
+<p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Email</p>
+<p class="text-lg">argh2014@gmail.com</p>
+</div>
+</a>
+<a class="flex items-center gap-4 text-white hover:text-emerald-400 transition-colors" href="tel:+2290197680703">
+<span class="material-symbols-outlined size-12 flex items-center justify-center bg-white/10 rounded-full">call</span>
+<div>
+<p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Téléphone</p>
+<p class="text-lg">+229 01 97 68 07 03</p>
+</div>
+</a>
+<a class="flex items-center gap-4 text-white hover:text-sky-400 transition-colors" href="#">
+<span class="material-symbols-outlined size-12 flex items-center justify-center bg-white/10 rounded-full">link</span>
+<div>
+<p class="text-xs text-slate-400 uppercase tracking-widest font-bold">LinkedIn</p>
+<p class="text-lg">Profil Ricardo AVLESSI</p>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-background-dark/30 p-8 rounded-3xl border border-white/5 backdrop-blur-sm">
+<form action="#" class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-400 mb-2">Nom complet</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-blue-500 outline-none transition-all" placeholder="Votre nom" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-400 mb-2">Email</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-blue-500 outline-none transition-all" placeholder="votre@email.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-400 mb-2">Message</label>
+<textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-blue-500 outline-none transition-all" placeholder="Votre message..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/20" type="submit">
+                                    Envoyer le message
+                                </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="px-6 lg:px-20 py-12 border-t border-white/5 text-center">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-sm">© 2024 Ricardo AVLESSI. Tous droits réservés.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Mentions légales</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Confidentialité</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
