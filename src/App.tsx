@@ -434,20 +434,24 @@ const App: React.FC = () => {
                                 </div>
                                 {/* Item 8 */}
                                 <div className="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video">
-                                    <div className="w-full h-full bg-slate-800 flex items-center justify-center">Projet 8</div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-80"></div>
-                                    <div className="absolute bottom-0 p-6">
-                                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Catégorie 8</span>
-                                        <h4 className="text-white font-bold text-lg">Titre du Projet 8</h4>
+                                    <div className="w-full h-full bg-slate-800 overflow-hidden">
+                                        <img src="/projet-8.jpg" alt="Campagne End Polio 2025 - ROTARY" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
+                                    <div className="absolute bottom-0 p-6 w-full z-10">
+                                        <span className="text-xs font-bold text-amber-400 uppercase tracking-widest">Santé Publique</span>
+                                        <h4 className="text-white font-bold text-lg leading-tight mt-1">ROTARY - Campagne End Polio 2025</h4>
                                     </div>
                                 </div>
                                 {/* Item 9 */}
                                 <div className="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video">
-                                    <div className="w-full h-full bg-slate-800 flex items-center justify-center">Projet 9</div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent opacity-80"></div>
-                                    <div className="absolute bottom-0 p-6">
-                                        <span className="text-xs font-bold text-amber-400 uppercase tracking-widest">Catégorie 9</span>
-                                        <h4 className="text-white font-bold text-lg">Titre du Projet 9</h4>
+                                    <div className="w-full h-full bg-slate-800 overflow-hidden">
+                                        <img src="/projet-9.jpg" alt="Remise d'attestation SWEDD" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
+                                    <div className="absolute bottom-0 p-6 w-full z-10">
+                                        <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Inclusion</span>
+                                        <h4 className="text-white font-bold text-lg leading-tight mt-1">Projet SWEDD - Remise d'attestation aux mentores</h4>
                                     </div>
                                 </div>
                             </div>
